@@ -48,4 +48,14 @@ I'm [Jia Hao,](https://woojiahao.com/) a computer science undergraduate from the
 
 ## Contact me
 
-If you have enjoyed reading this guide, wish to ask any clarifying questions, spotted an issue with the guide, or just wanna chat, do drop me an email at woojiahao1234@gmail.com.
+If you have enjoyed reading this guide, wish to ask any clarifying questions, spotted an issue with the guide, or just wanna chat, do drop me an email at [woojiahao1234@gmail.com](mailto:woojiahao1234@gmail.com).
+
+## Content left
+
+Just a quick checklist of content that I have yet to add (both for myself and for you to see if there's anything more I can add to this guide):
+
+* [ ] Adding slides to prerequisites
+* [ ] Adding section of "Anonymous functions"
+* [ ] Adding section on Mix build tool
+* [ ] Creating Phoenix TODO demo app
+* [ ] Adding more resources to [resources.md](resources.md "mention")
