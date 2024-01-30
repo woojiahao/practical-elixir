@@ -131,3 +131,61 @@ def abs_minus(a, b), do: a - b
 There are certain limitations to using guard clauses, one of which includes not being able to use custom functions in the guard clause (this is due to the nature of how guard clauses and functions are compiled). You can refer to this [website for more information](https://kapeli.com/cheat\_sheets/Elixir\_Guards.docset/Contents/Resources/Documents/index) about guard clauses.
 
 ## Anonymous functions
+
+Anonymous functions are functions declared without using the `def` macro. They allow you to pass functions around as parameters or return values (you can do that even with regular functions too!).
+
+You can declare anonymous functions with `fn <parameter list> -> <function body> end`:
+
+```elixir
+pow_two = fn x -> x * x end
+pow_two.(4) # returns 16
+```
+
+You can also make the anonymous function multi-line by adding a newline after `->` (unlike Python's lambdas).&#x20;
+
+Notice that you call the anonymous function using `.()` rather than just `()`, this helps make it clear that you are calling an anonymous function as you may have overriden an existing function.
+
+## Closures
+
+Anonymous functions have access to the variables that are in scope when the function is defined. This is also known as a closure.
+
+```elixir
+def foo do
+    x = 42
+    bar = fn -> x * 2 end
+    bar.() # returns 84
+end
+```
+
+## Currying
+
+Closures are particularly useful when you are trying to curry functions. Currying is a functional programming technique that takes functions that accept multiple parameters and transforms them into functions that take only one parameter each.&#x20;
+
+Closures allow each of the nested functions to reference the variables from outside of its current scope (i.e. the innermost function can reference `a` and `b`):
+
+```elixir
+def foo(a, b, c) do
+    a * b + c
+end
+
+def curry_foo(a) do
+    fn b ->
+        fn c ->
+            a * b + c
+    end
+end
+
+foo(1, 2, 3) # returns 5
+curry_foo(1).(2).(3) # returns 5
+```
+
+Currying is useful for creating partial applications of functions. For instance, let's say I would like to apply the last operation (`* c`) with different values but preserve the values of `a = 1` and `b = 2` from the initial application, I can do so by applying the curried function twice (not three times) and then saving the partially applied function as a variable:
+
+```elixir
+partial = curry_foo(1).(2)
+partial.(3) # returns 5
+partial.(6) # returns 8 instead
+partial.(10) # returns 12
+```
+
+So, rather than having to type `foo(1, 2, 3)` and then `foo(1, 2, 6)` and then `foo(1, 2, 10)`, I only have to call `partial.(x)` with the different variables.

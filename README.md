@@ -55,7 +55,11 @@ If you have enjoyed reading this guide, wish to ask any clarifying questions, sp
 Just a quick checklist of content that I have yet to add (both for myself and for you to see if there's anything more I can add to this guide):
 
 * [ ] Adding slides to prerequisites
-* [ ] Adding section of "Anonymous functions"
+* [x] Adding section of "Anonymous functions"
 * [ ] Adding section on Mix build tool
 * [ ] Creating Phoenix TODO demo app
 * [ ] Adding more resources to [resources.md](resources.md "mention")
+* [ ] Functional programming concepts in Elixir
+  * [x] Currying (add to [functions.md](elixir-fundamentals/functions.md "mention"))
+  * [x] Closures (add to [functions.md](elixir-fundamentals/functions.md "mention"))
+  * [ ] Immutability demonstration (add to [types](elixir-fundamentals/types/ "mention"))
