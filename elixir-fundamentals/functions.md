@@ -179,7 +179,7 @@ foo(1, 2, 3) # returns 5
 curry_foo(1).(2).(3) # returns 5
 ```
 
-Currying is useful for creating partial applications of functions. For instance, let's say I would like to apply the last operation (`* c`) with different values but preserve the values of `a = 1` and `b = 2` from the initial application, I can do so by applying the curried function twice (not three times) and then saving the partially applied function as a variable:
+Currying is useful for creating partial applications of functions. For instance, let's say you would like to apply the last operation (`* c`) with different values but preserve the values of `a = 1` and `b = 2` from the initial application, you can do so by applying the curried function twice (not three times) and then saving the partially applied function as a variable:
 
 ```elixir
 partial = curry_foo(1).(2)
@@ -188,4 +188,4 @@ partial.(6) # returns 8 instead
 partial.(10) # returns 12
 ```
 
-So, rather than having to type `foo(1, 2, 3)` and then `foo(1, 2, 6)` and then `foo(1, 2, 10)`, I only have to call `partial.(x)` with the different variables.
+So, rather than having to type `foo(1, 2, 3)` and then `foo(1, 2, 6)` and then `foo(1, 2, 10)`, you only have to call `partial.(x)` with the different variables.

@@ -56,7 +56,7 @@ Just a quick checklist of content that I have yet to add (both for myself and fo
 
 * [ ] Adding slides to prerequisites
 * [x] Adding section of "Anonymous functions"
-* [ ] Adding section on Mix build tool
+* [x] Adding section on Mix build tool
 * [ ] Creating Phoenix TODO demo app
 * [ ] Adding more resources to [resources.md](resources.md "mention")
 * [ ] Functional programming concepts in Elixir
