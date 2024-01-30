@@ -16,5 +16,6 @@
   * [🐳 Recursion](elixir-fundamentals/recursion.md)
   * [🐖 Enumerables](elixir-fundamentals/enumerables.md)
   * [🦁 Mix](elixir-fundamentals/mix.md)
-* [🦅 Web development with Elixir](web-development-with-elixir.md)
+* [🦅 Web development with Elixir](web-development-with-elixir/README.md)
+  * [Untitled](web-development-with-elixir/untitled.md)
 * [🐍 Resources](resources.md)

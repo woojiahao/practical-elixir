@@ -63,3 +63,6 @@ Just a quick checklist of content that I have yet to add (both for myself and fo
   * [x] Currying (add to [functions.md](elixir-fundamentals/functions.md "mention"))
   * [x] Closures (add to [functions.md](elixir-fundamentals/functions.md "mention"))
   * [ ] Immutability demonstration (add to [types](elixir-fundamentals/types/ "mention"))
+* [ ] Adding bonus sections for Phoenix
+  * [ ] Data persistence
+  * [ ] Phoenix LiveView
