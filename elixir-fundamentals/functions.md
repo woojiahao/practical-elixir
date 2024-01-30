@@ -172,6 +172,7 @@ def curry_foo(a) do
     fn b ->
         fn c ->
             a * b + c
+        end
     end
 end
 
