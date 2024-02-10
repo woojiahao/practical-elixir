@@ -40,6 +40,16 @@ This guide will provide an introduction to Phoenix by getting you to build a to-
 
 However, there will be bonus chapters that cover slightly more advanced version ideas of Phoenix such as Phoenix LiveView.
 
+### Structure
+
+The following is the content structure of this guide:
+
+1. Directory structure of Phoenix projects
+2. Adding your first page
+3. Anatomy of Phoenix projects
+4. Persisting data with Ecto
+5. Building the to-do list
+
 ## Getting started
 
 To get started with using web development using Elixir and Phoenix, we will start by installing the Phoenix CLI archive on your machine:
@@ -51,7 +61,7 @@ mix archive.install hex phx_new
 Then, you can create a new Phoenix project with the necessary boilerplate:
 
 ```
-mix phx.new demo --database sqlite3
+mix phx.new practical_elixir_demo --database sqlite3
 ```
 
 You may be prompted on whether you want to fetch the dependencies, agree to that option.
@@ -59,7 +69,13 @@ You may be prompted on whether you want to fetch the dependencies, agree to that
 Then, navigate to the new folder:
 
 ```
-cd demo/
+cd practical_elixir_demo/
+```
+
+Then, create the database. Phoenix uses a very popular Elixir library, Ecto for performing database queries and mapping:
+
+```
+mix ecto.create
 ```
 
 Finally, you can run the demo application:
@@ -71,3 +87,7 @@ mix phx.server
 You should see the following show up at [http://localhost:4000](http://localhost:4000/)
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+If you want to view the full codebase without running each command, refer to [this repository instead.](https://github.com/woojiahao/practical\_elixir\_demo)
+{% endhint %}

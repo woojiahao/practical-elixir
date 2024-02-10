@@ -17,5 +17,6 @@
   * [🐖 Enumerables](elixir-fundamentals/enumerables.md)
   * [🦁 Mix](elixir-fundamentals/mix.md)
 * [🦅 Web development with Elixir](web-development-with-elixir/README.md)
-  * [Untitled](web-development-with-elixir/untitled.md)
+  * [🐦 Directory structure](web-development-with-elixir/directory-structure.md)
+  * [🦤 Your first page](web-development-with-elixir/your-first-page.md)
 * [🐍 Resources](resources.md)
