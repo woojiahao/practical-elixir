@@ -18,5 +18,7 @@
   * [🦁 Mix](elixir-fundamentals/mix.md)
 * [🦅 Web development with Elixir](web-development-with-elixir/README.md)
   * [🐦 Directory structure](web-development-with-elixir/directory-structure.md)
-  * [🦤 Your first page](web-development-with-elixir/your-first-page.md)
+  * [🦤 First steps](web-development-with-elixir/first-steps.md)
+  * [🦇 Getting to-dos](web-development-with-elixir/getting-to-dos.md)
+  * [🐣 Viewing to-do list](web-development-with-elixir/viewing-to-do-list.md)
 * [🐍 Resources](resources.md)

@@ -38,17 +38,20 @@ As mentioned in the beginning of the guide, this guide does not attempt to provi
 
 This guide will provide an introduction to Phoenix by getting you to build a to-do list application with some basic data persistence using SQLite3 (we are using a local database to reduce the amount of setup required to following along).
 
-However, there will be bonus chapters that cover slightly more advanced version ideas of Phoenix such as Phoenix LiveView.
+This guide is loosely based on the [official Phoenix guide](https://hexdocs.pm/phoenix/up\_and\_running.html). However, I have adapted it to suit the intended pace and flow of this guide so do expect that some information might be covered later or earlier or not at all.
 
 ### Structure
 
 The following is the content structure of this guide:
 
 1. Directory structure of Phoenix projects
-2. Adding your first page
-3. Anatomy of Phoenix projects
-4. Persisting data with Ecto
-5. Building the to-do list
+2. Request lifecycle
+3. Representing to-do items in Elixir
+4. Anatomy of routers
+5. Creating a new HTTP endpoint
+6. Rendering the to-do list
+7. Adding more actions to to-do list
+8. Persisting data with Ecto and SQLite3
 
 ## Getting started
 
