@@ -20,6 +20,10 @@ To follow along with this guide, please ensure that you have the following setup
 2. Install SQLite locally (it should be preinstalled for MacOS and Linux users), for Windows users, refer to [this guide](https://www.tutorialspoint.com/sqlite/sqlite\_installation.htm)&#x20;
 3. Clone the demo repository for the code snippets
 
+{% hint style="danger" %}
+The demo repository is not completed as of 11 February 2024. An update will be made when the full repository is ready.
+{% endhint %}
+
 ```
 git clone https://github.com/woojiahao/practical_elixir_demo
 ```
