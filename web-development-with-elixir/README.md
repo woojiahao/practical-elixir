@@ -89,7 +89,7 @@ mix phx.server
 
 You should see the following show up at [http://localhost:4000](http://localhost:4000/)
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you want to view the full codebase without running each command, refer to [this repository instead.](https://github.com/woojiahao/practical\_elixir\_demo)
