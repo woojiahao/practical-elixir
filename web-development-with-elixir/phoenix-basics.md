@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# 🦇 Getting to-dos
+# 🦇 Phoenix basics
 
 To first render the to-dos, let's first create a new endpoint to handle this "retrieval" request (i.e. `GET` request) and add a new page to render this content.
 
@@ -117,7 +117,9 @@ In the above example, we define the parent route to be `/` and the parent module
 To familiarize yourself with the router structure, we can define an API endpoint that returns the dummy list of to-do items.
 
 {% hint style="warning" %}
-This guide will not actually require any API endpoints as we would be able to retrieve all of the information directly through the back-end (since this is an umbrella project). However, in projects that have separate repositories for the front-end and back-end, you would use these API endpoints to query for the information!
+This guide will not actually require any API endpoints as we would be able to retrieve all of the information directly through the back-end (more on how this will work later). \
+\
+However, in projects that have separate repositories for the front-end and back-end, you would use these API endpoints to query for the information!
 {% endhint %}
 
 Add the following lines to the router:

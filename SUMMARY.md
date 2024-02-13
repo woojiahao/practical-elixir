@@ -21,4 +21,6 @@
   * [🦤 First steps](web-development-with-elixir/first-steps.md)
   * [🦇 Phoenix basics](web-development-with-elixir/phoenix-basics.md)
   * [🐣 Viewing to-do list](web-development-with-elixir/viewing-to-do-list.md)
+  * [🐔 Adding dynamic behavior](web-development-with-elixir/adding-dynamic-behavior.md)
+  * [🦆 Data persistence](web-development-with-elixir/data-persistence.md)
 * [🐍 Resources](resources.md)

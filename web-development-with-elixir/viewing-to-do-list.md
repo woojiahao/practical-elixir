@@ -63,6 +63,7 @@ HEEx is a templating language designed with work with embedding Elixir in HTML. 
 
 Then, you can populate the file with the following:
 
+{% code title="" %}
 ```html
 <div>
   <h1>Todo List</h1>
@@ -82,10 +83,11 @@ Then, you can populate the file with the following:
 </div>
 
 ```
+{% endcode %}
 
 Then, if you ran the web application and navigated to [http://localhost:4000/todo](http://localhost:4000/todo), you should notice the following being rendered:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Nothing too fancy, but as you can see, the dummy to-do list we have constructed earlier now appears on the page.
 
@@ -111,6 +113,7 @@ For our demo, let's abstract each to-do list item to its own functional componen
 
 To declare a new functional component for that view controller, all you need to do is to add a function with the function name as the name of the intended functional component and it must receive an argument called `assigns`. The purpose of this argument is to allow the HEEx to pass data to the functional component to be used within the functional component:
 
+{% code title="lib/practical_elixir_demo_web/controllers/page_html.ex" %}
 ```elixir
 defmodule PracticalElixirDemoWeb.PageHTML do
   # ...
@@ -133,11 +136,13 @@ defmodule PracticalElixirDemoWeb.PageHTML do
 end
 
 ```
+{% endcode %}
 
 You use the `@<variable>` notation to access values passed to the functional component via `assigns`. Also notice that we have effectively moved the entire block found in the `for` loop into the functional component.
 
 Then, you can use the functional component in the HEEx as follows:
 
+{% code title="lib/practical_elixir_demo_web/controllers/page_html/todo.html.heex" %}
 ```html
 <div>
   <h1>Todo List</h1>
@@ -146,6 +151,7 @@ Then, you can use the functional component in the HEEx as follows:
   <% end %>
 </div>
 ```
+{% endcode %}
 
 We have replaced the bulk of the `for` loop body with the functional component which is referenced via the `.<functional_component>` notation with the `@item` given as an a HTML attribute. Phoenix intelligently does the mapping from HEEx to functional component.
 
@@ -155,11 +161,13 @@ The current to-do list view is quite plain. Let's spruce things up a bit.
 
 As mentioned in [directory-structure.md](directory-structure.md "mention"), all CSS files are stored under `assets/`. However, if you opened the `assets/css/app.css` file, you will notice that there are the following three lines:
 
+{% code title="assets/css/app.css" %}
 ```css
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 ```
+{% endcode %}
 
 Phoenix uses [Tailwind CSS](https://tailwindcss.com/) under the hood for performing styling. This means that rather than writing CSS files and storing them under `assets/css` you can actually write inline styles for each element as per Tailwind CSS, very handy!
 
@@ -213,4 +221,4 @@ These styles should result in the following page:
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Now that the to-do list is more visually appealing, let's dive into setting up button actions.
+Now that the to-do list is more visually appealing, let's dive into setting up dynamic behavior.
