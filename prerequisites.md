@@ -53,6 +53,10 @@ git fetch
 git switch main/liveview-base/liveview/complete
 ```
 
+## Slides
+
+You can find the slides for this workshop [here](https://github.com/woojiahao/talks/blob/main/20240215-practical-functional-programming/slides.pdf).
+
 ## Other prerequisites
 
 Aside from these technical requirements, this guide assumes that you have some programming fundamentals (i.e. loops, basic understanding of recursion, variables, statements, etc.). More on these concepts will be introduced but it will be useful to have some fundamentals.
