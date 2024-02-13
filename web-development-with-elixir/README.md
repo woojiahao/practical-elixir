@@ -54,6 +54,10 @@ The following is the content structure of this guide:
 8. Adding more actions to to-do list
 9. Persisting data with Ecto and SQLite3
 
+{% hint style="info" %}
+If you are watching the recorded series or attending the live event, the last part of persisting data may not be covered depending on time constraint. Do give the chapter a read if you have time as data persistence is a big component of working with web applications!
+{% endhint %}
+
 ## Getting started
 
 To get started with using web development using Elixir and Phoenix, we will start by installing the Phoenix CLI archive on your machine:
