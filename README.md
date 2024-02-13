@@ -38,7 +38,7 @@ This guide does not...
 
 :x: Provide a deep explanation of various constructs in Elixir like macros and IO
 
-:x: Teach you you everything about Phoenix, for that, please use the official documentation instead
+:x: Teach you everything about Phoenix, for that, please use the official documentation instead
 
 :x: Claim that Elixir is the only production ready functional programming language, it is just a personal preference!
 
