@@ -43,6 +43,7 @@ If you open `todo.ex`, you will see the following:
 defmodule PracticalElixirDemo.Todo do
   alias PracticalElixirDemo.Repo
   use Ecto.Schema
+  import Ecto.Query
   import Ecto.Changeset
 
   @primary_key {:id, :binary_id, autogenerate: true}
